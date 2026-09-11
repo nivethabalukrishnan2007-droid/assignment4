@@ -3,72 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Webpage</title>
+
+    <title>Nivetha's Website</title>
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             color: #333;
         }
+
         header {
-            background-color: #0073e6;
+            background-color: #222;
             color: white;
-            padding: 20px;
-            text-align: center;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        main {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
+
+        header h2 {
+            font-size: 24px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
             background-color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
         }
-        .btn {
+
+        .hero p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .button {
             display: inline-block;
-            background-color: #0073e6;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background-color: #222;
             color: white;
-            padding: 10px 15px;
             text-decoration: none;
             border-radius: 5px;
         }
+
+        .button:hover {
+            background-color: #444;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+        }
     </style>
 </head>
+
 <body>
 
     <header>
-        <h1>Welcome to My Webpage</h1>
+        <h2>Nivetha's Website</h2>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
     </header>
 
-    <main>
-        <h2>About This Page</h2>
-        <p>This is a standard HTML5 template that you can use to build your website. It includes a header, a main content area, and a styled footer.</p>
-        
-        <h3>Key Features Included:</h3>
-        <ul>
-            <li>Mobile-responsive meta tags</li>
-            <li>Basic embedded CSS styling</li>
-            <li>Semantic layout tags (header, main, footer)</li>
-        </ul>
+    <section class="hero">
+        <div>
+            <h1>THIS IS NIVETHA'S WEBSITE</h1>
 
-        <p>Want to learn more? Check out the comprehensive guide on <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs</a>.</p>
-        
-        <br>
-        <a href="#" class="btn">Clickable Button</a>
-    </main>
+            <p>Welcome to my personal webpage</p>
+
+            <a href="#" class="button">Explore</a>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2026 My Webpage Company</p>
+        <p>© 2026 Nivetha's Website. All Rights Reserved.</p>
     </footer>
 
 </body>
