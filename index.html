@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Nivetha's Website</title>
+    <title>Nivetha's Website - Login</title>
 
     <style>
         * {
@@ -15,17 +16,15 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            background: #f4f4f4;
         }
 
         header {
-            background-color: #222;
+            background: #222;
             color: white;
             padding: 20px 50px;
             display: flex;
             justify-content: space-between;
-            align-items: center;
         }
 
         header h2 {
@@ -38,48 +37,59 @@
             margin-left: 25px;
         }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .hero {
-            height: 70vh;
+        .container {
+            height: 75vh;
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        .login-box {
+            background: white;
+            width: 350px;
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .login-box h1 {
             text-align: center;
-            background-color: white;
+            margin-bottom: 25px;
         }
 
-        .hero h1 {
-            font-size: 45px;
-            margin-bottom: 15px;
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
         }
 
-        .hero p {
-            font-size: 18px;
-            color: #666;
-        }
-
-        .button {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 12px 25px;
-            background-color: #222;
-            color: white;
-            text-decoration: none;
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
             border-radius: 5px;
         }
 
-        .button:hover {
-            background-color: #444;
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 25px;
+            background: #222;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #444;
         }
 
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: #222;
+            background: #222;
             color: white;
+            padding: 15px;
         }
     </style>
 </head>
@@ -96,19 +106,34 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <div>
-            <h1>THIS IS NIVETHA'S WEBSITE</h1>
+    <div class="container">
 
-            <p>Welcome to my personal webpage</p>
+        <div class="login-box">
 
-            <a href="#" class="button">Explore</a>
+            <h1>Login</h1>
+
+            <form>
+
+                <label for="username">Username</label>
+                <input type="text" id="username"
+                       placeholder="Enter your username">
+
+                <label for="password">Password</label>
+                <input type="password" id="password"
+                       placeholder="Enter your password">
+
+                <button type="submit">Login</button>
+
+            </form>
+
         </div>
-    </section>
+
+    </div>
 
     <footer>
-        <p>© 2026 Nivetha's Website. All Rights Reserved.</p>
+        <p>© 2026 Nivetha's Website</p>
     </footer>
 
 </body>
+
 </html>
